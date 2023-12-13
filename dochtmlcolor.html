@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head><title> Goggle form</title></head>
+    <body>
+    <form style="background-color:beige">
+        <h2 style="color: blueviolet; font-family: cursive; text-align: center">Welcome pls fill the details..</h2> <hr style="color: black">
+        
+        <h3 style="color: deeppink; font-family:cursive"><u> Name Box </u></h3>
+        <label style="color:black"><big>Name:</big></label>
+        <input type="text" placeholder="Enter a valid name" title="Invalid name" pattern="[a-zA-Z]{3,12}" required>
+        <p style="color: green ;  font-style:italic; font-family: cursive; font-size:15px  ">Enter a valid name.</p>
+        <p style="color: green ;  font-style: italic; font-family: cursive; font-size: 15px">Name should be of minimum 3 characters and maximum 12 characters.</p>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Age</u></h3>
+        <label style="color:black"><big>Age:</big></label>
+        <input type="number"  min="18" max="29" required>
+        <p style="color: green ; font-family: cursive;  font-style: italic ; font-size: 15px">Enter a valid age.</p>
+        <p style="color: green; font-family: cursive; font-style: italic; font-size: 15px">Age should be in between 18 to 29.</p>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Date Of Birth</u></h3>
+        <label style="color:black;"><big>Date of birth:</big></label>
+        <input type="date" >
+        <p style="color: green ; font-family: cursive; font-style: italic; font-size: 15px" >Enter a valid date of birth.</p>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Phone Number</u></h3>
+        <label style="color: black"><big>Phone Number:</big></label>
+        <input type="text" pattern="^[6-9]{1}[0-9]{9}$" title="Invalid number" placeholder="Enter your phone number">
+        <p style="color: green; font-family: cursive; font-style: italic; font-size: 15px">Phone number should start from digit 6,7,8,9.</p>
+        <p style="color: green; font-family: cursive; font-style: italic; font-size: 15px">It must be a ten digit number.</p>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Email Box</u></h3>
+        <input type="email" pattern="[a-zA-Z0-9]+@[a-z]+.[a-zA-Z]{3,4}" placeholder="Enter a valid mail"  title="Invalid mail" required>
+        <p style="color: green; font-family: cursive; font-style: italic; font-size: 15px">Enter a valid mail.</p>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Check Box</u></h3> 
+        <label style="color: black"><big> Technical skills:</big></label> <br>
+        <input type="checkbox"> JAVA <br>
+        <input type="checkbox"> Python <br>
+        <input type="checkbox"> SQL <br>
+        <input type="checkbox"> C <br>
+        <input type="checkbox"> Data Structures <br>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Radio Button</u></h3>
+        <label style="color: black"><big>Select your Gender:</big></label> <br>
+        <input type="radio"; name="gender"> Female 
+        <input type="radio"; name="gender"> Male
+        <input type="radio"; name="gender"> Other
+        
+        <h3 style="color:deeppink; font-family: cursive"><u>Select Box</u></h3>
+        <label style="color: black"><big>Select your city:</big></label> <br>
+        <select>
+           <option> Select</option>
+            <option>Bangalore</option>
+            <option>Mumbai</option>
+            <option>Hyderabad</option>
+            <option>Chennai</option>
+        </select>
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Upload Button</u></h3>
+        <label style="color: black; "><big>Choose your file:</big></label>
+        <input type="file">
+        
+        <h3 style="color: deeppink; font-family: cursive"><u>Submit Button</u></h3>
+        <input type="submit">
+        
+    </form>
+    </body>
+</html>
